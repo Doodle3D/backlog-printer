@@ -1,0 +1,47 @@
+body {
+	font-family: Abel, Tahoma, Geneva, sans-serif;
+}
+
+h2 {
+	 font-size: 30px;
+ }
+table {
+	border: 1px solid black;
+	width: 100%;
+	width: 800px;
+	page-break-inside:avoid;
+	
+	margin-bottom: 30px;
+	border-spacing: 0;
+	border-collapse: collapse;
+}
+td,th {
+	text-align: left;
+	border: 1px solid black;
+}
+th {
+	font-size: 30px;
+	padding: 10px 10px 10px 10px;
+}
+td {
+	width: 25%;
+	padding: 10px 10px 10px 10px;
+}
+@media print {
+	.category {
+		page-break-after: always;
+	}
+}
+/* generated with: 
+   http://tools.medialab.sciences-po.fr/iwanthue/palettes.php */
+.category-user-research { background-color: #CED4CF; }
+.category-tech-research { background-color: #D1D882; }
+.category-2d-tools { background-color: #8CDFBC; }
+.category-algemeen { background-color: #EDABBF; }
+.category-support { background-color: #E6B875; }
+.category-files { background-color: #E4BAA3; }
+.category-toolbars { background-color: #90DADB; }
+.category-2d-selectie-transformatie { background-color: #A6E09A; }
+.category-3d-preview { background-color: #C3D8B1; }
+.category-print-popup { background-color: #B0CBE6; }
+.category-3d-tools { background-color: #DAC1E1; }

@@ -1,0 +1,35 @@
+{
+  "jspm": {
+    "directories": {},
+    "dependencies": {
+      "attr-accept": "npm:attr-accept@^1.0.1",
+      "csv": "github:mholt/PapaParse@^4.1.2",
+      "csv-parser": "npm:csv-parser@^1.8.0",
+      "react": "npm:react@^0.14.0",
+      "react-dom": "npm:react-dom@^0.14.0",
+      "react-dropzone": "github:paramaggarwal/react-dropzone@1.2.4"
+    },
+    "devDependencies": {
+      "babel": "npm:babel-core@^5.8.22",
+      "babel-runtime": "npm:babel-runtime@^5.8.20",
+      "core-js": "npm:core-js@^1.1.0"
+    },
+    "overrides": {
+      "github:paramaggarwal/react-dropzone@2.2.0": {
+        "main": "index.js"
+      }
+    }
+  },
+  "name": "backlog-printer",
+  "version": "1.0.0",
+  "main": "build.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "html-dist": "^0.1.0"
+  }
+}
