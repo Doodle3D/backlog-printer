@@ -35,10 +35,10 @@ export default class App extends React.Component {
       switch(extension) {
         case 'csv':
         let result = csv.parse(file.contents, {header: true});
-          // console.log('result: ', result);
+          console.log('result: ', result);
           let backlog = {};
           for(let item of result.data) {
-            // console.log('item: ', item);
+            console.log('item: ', item);
             let category = 'category-'+item.Categorie.toLowerCase()
               .replace(/(\+|^\s|\s&)/g,'')
               .replace(/\s+/g,'-');
@@ -61,6 +61,7 @@ export default class App extends React.Component {
   }
   render () {
     const {backlog} = this.state;
+    console.log('backlog: ', backlog);
     return (
       <FileDropZone onDrop={this.onDrop}>
         {Object.keys(backlog).map((categoryID) => {
@@ -70,10 +71,10 @@ export default class App extends React.Component {
           return (
             <div key={categoryID} className='category'>
               <h2>{categoryTitle}</h2>
-              {items.map((item) => {
+              {items.map((item, index) => {
                 // console.log('item: ', item);
                 return <BacklogItem 
-                  key={item.Titel}
+                  key={index}
                   categoryID={categoryID}
                   category={item.Categorie}
                   priority={item.Prioriteit}
